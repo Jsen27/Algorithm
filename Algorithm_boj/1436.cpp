@@ -1,12 +1,41 @@
 #include <iostream>
 #include <string>
-#include <algorithm>
 using namespace std;
+
+int solution(int n);
 
 int main(void)
 {
-	// 힌트 : to_string 활용하기
-	// 666에서 1씩 늘려서 666일경우 ++
+	int n;
+	cin >> n;
+	
+	solution(n);
 
 	return 0;
+}
+
+int solution(int n)
+{
+	int a = 666;
+	int ans = 0;
+	string str;
+
+	while (1)
+	{
+		str = to_string(a);
+		for (int i = 0; i < str.length() - 2; i++)
+		{
+			if (str[i] == '6' && str[i + 1] == '6' && str[i + 2] == '6')
+			{
+				ans++;
+				if (ans == n)
+				{
+					cout << str << '\n';
+					return 0;
+				}
+				break;
+			}
+		}
+		a++;
+	}
 }

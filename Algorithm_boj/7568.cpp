@@ -24,5 +24,5 @@ int main(void)
 				rank++;
 		cout << rank << ' ';
 	}
-	return 0;
+	return 0; 
 }

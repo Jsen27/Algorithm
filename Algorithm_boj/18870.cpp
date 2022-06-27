@@ -16,7 +16,7 @@ int main()
 	v2 = v;
 
 	sort(v.begin(), v.end());
-	unique(v.begin(), v.end());
+	v.erase(unique(v.begin(), v.end()), v.end());
 
 	for (int i = 0; i < n; i++)
 		cout << lower_bound(v.begin(), v.end(), v2[i]) - v.begin() << ' ';

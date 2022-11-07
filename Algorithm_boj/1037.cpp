@@ -11,13 +11,11 @@ int main()
 	vector<int>v;
 	int n, input;
 	cin >> n;
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++){
 		cin >> input;
 		v.push_back(input);
 	}
 	sort(v.begin(), v.end());
-
 	cout << v[0] * v[n - 1];
-
 	return 0;
 }

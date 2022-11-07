@@ -5,18 +5,18 @@ int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
+	int a, b;
 
-	while (1) {
-		int a, b;
+	while (1){
 		cin >> a >> b;
-		if (a == 0 && b == 0)
+		if(a == 0 && b == 0)
 			break;
-		else if (b % a == 0)
-			cout << "factor" << '\n';
 		else if (a % b == 0)
-			cout << "multiple" << '\n';
+			cout << "factor" << endl;
+		else if (b % a == 0)
+			cout << "multiple" << endl;
 		else
-			cout << "neither" << '\n';
+			cout << "neither" << endl;
 	}
 
 	return 0;

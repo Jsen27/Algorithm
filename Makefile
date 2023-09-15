@@ -1,8 +1,8 @@
 NAME =	grademe
 
-CXX = c++
+CXX = clang++
 
-CXXFLAGS =	-Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -std=c++11 -g
 
 SRCS =	*.cpp\
 

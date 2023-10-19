@@ -67,7 +67,8 @@ int main(void) {
                     escape = true;
                     break;
                 }
-                if (map[nx][ny] == '#' || sdist[nx][ny] != -1 || (fdist[nx][ny] != -1 && fdist[nx][ny] <= sdist[v.first][v.second] + 1)) continue;
+                if (map[nx][ny] == '#' || sdist[nx][ny] != -1
+					|| (fdist[nx][ny] != -1 && fdist[nx][ny] <= sdist[v.first][v.second] + 1)) continue;
                 sdist[nx][ny] = sdist[v.first][v.second] + 1;
                 Qs.push({nx, ny});
             }

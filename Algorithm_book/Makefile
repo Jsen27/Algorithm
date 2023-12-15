@@ -1,10 +1,10 @@
-NAME =	grademe
+NAME =	a.out
 
 CXX = g++
 
 CXXFLAGS = -std=c++17 -g
 
-SRCS =	*.cpp\
+SRCS =	2.cpp\
 
 OBJS =	$(SRCS:.cpp=.o)
 
@@ -17,7 +17,7 @@ clean	:
 			$(RM) $(OBJS)
 
 fclean	:
-			$(RM) $(OBJS) grademe
+			$(RM) $(OBJS) a.out
 
 re	:	fclean
 		make all

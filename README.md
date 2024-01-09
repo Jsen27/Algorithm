@@ -1,6 +1,3 @@
-2023-10-11 모든 알고리즘 문제 해결을 저장하는 레포지토리입니다.
+<h1>Only solve it in C++ !</h1><br>
 
-
-
-
-2022-04-19 백준 온라인저지 알고리즘 저장 레포지토리입니다.
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=sehoon2)](https://solved.ac/sehoon2/)
